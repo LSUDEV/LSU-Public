@@ -1,5 +1,12 @@
 --[[
 
+    -- Lorix W --
+
+
+
+
+    -- CREDITS TO OCTOHOOK --
+
     Library Made for https://octohook.xyz/
     Developed by liam#4567
 
@@ -74,7 +81,7 @@ local library = {
         ['colortrans'] = 'https://raw.githubusercontent.com/zuvvymwa/octopngs/main/octohook-main/images/transparency.png';
     };
     numberStrings = {['Zero'] = 0, ['One'] = 1, ['Two'] = 2, ['Three'] = 3, ['Four'] = 4, ['Five'] = 5, ['Six'] = 6, ['Seven'] = 7, ['Eight'] = 8, ['Nine'] = 9};
-    signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/zuvvymwa/zynixdev/main/resources/octosignal'))();
+    signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/LSUDEV/LSU-Public/main/Utils/signalrewrite.lua'))();
     open = false;
     opening = false;
     hasInit = false;
@@ -83,35 +90,11 @@ local library = {
     fileext = startupArgs.fileext or '.txt';
 }
 
+
+
 library.themes = {
     {
         name = 'Default',
-        theme = {
-            ['Accent']                    = fromrgb(255,255,255);
-            ['Background']                = fromrgb(18,18,18);
-            ['Border']                    = fromrgb(0,0,0);
-            ['Border 1']                  = fromrgb(60,60,60);
-            ['Border 2']                  = fromrgb(35,35,35);
-            ['Border 3']                  = fromrgb(10,10,10);
-            ['Primary Text']              = fromrgb(235,235,235);
-            ['Group Background']          = fromrgb(35,35,35);
-            ['Selected Tab Background']   = fromrgb(35,35,35);
-            ['Unselected Tab Background'] = fromrgb(18,18,18);
-            ['Selected Tab Text']         = fromrgb(245,245,245);
-            ['Unselected Tab Text']       = fromrgb(145,145,145);
-            ['Section Background']        = fromrgb(18,18,18);
-            ['Option Text 1']             = fromrgb(245,245,245);
-            ['Option Text 2']             = fromrgb(195,195,195);
-            ['Option Text 3']             = fromrgb(145,145,145);
-            ['Option Border 1']           = fromrgb(50,50,50);
-            ['Option Border 2']           = fromrgb(0,0,0);
-            ['Option Background']         = fromrgb(35,35,35);
-            ["Risky Text"]                = fromrgb(175, 21, 21);
-            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
-        }
-    },
-    {
-        name = 'Tokyo Night',
         theme = {
             ['Accent']                    = fromrgb(103,89,179);
             ['Background']                = fromrgb(22,22,31);
@@ -134,6 +117,33 @@ library.themes = {
             ['Option Background']         = fromrgb(24,25,37);
             ["Risky Text"]                = fromrgb(175, 21, 21);
             ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
+        }
+    },
+    {
+        name = 'Octohook (new)',
+        theme = {
+            ['Accent']                    = fromrgb(255,255,255);
+            ['Background']                = fromrgb(18,18,18);
+            ['Border']                    = fromrgb(0,0,0);
+            ['Border 1']                  = fromrgb(60,60,60);
+            ['Border 2']                  = fromrgb(35,35,35);
+            ['Border 3']                  = fromrgb(10,10,10);
+            ['Primary Text']              = fromrgb(235,235,235);
+            ['Group Background']          = fromrgb(35,35,35);
+            ['Selected Tab Background']   = fromrgb(35,35,35);
+            ['Unselected Tab Background'] = fromrgb(18,18,18);
+            ['Selected Tab Text']         = fromrgb(245,245,245);
+            ['Unselected Tab Text']       = fromrgb(145,145,145);
+            ['Section Background']        = fromrgb(18,18,18);
+            ['Option Text 1']             = fromrgb(245,245,245);
+            ['Option Text 2']             = fromrgb(195,195,195);
+            ['Option Text 3']             = fromrgb(145,145,145);
+            ['Option Border 1']           = fromrgb(50,50,50);
+            ['Option Border 2']           = fromrgb(0,0,0);
+            ['Option Background']         = fromrgb(35,35,35);
+            ["Risky Text"]                = fromrgb(175, 21, 21);
+            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
+
         }
     },
     {
