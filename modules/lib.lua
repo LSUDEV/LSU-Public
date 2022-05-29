@@ -4712,7 +4712,7 @@ function library:init()
         end
     end)
 
-    self.keyIndicator = self.NewIndicator({title = 'zuvhook', pos = UDim2.new(0, 449, 0.7, 20.5), enabled = false});
+    self.keyIndicator = self.NewIndicator({title = 'lorix', pos = UDim2.new(0, 449, 0.7, 20.5), enabled = false});
     self:SetTheme(library.theme);
     self:SetOpen(true);
     self.hasInit = true
@@ -4789,7 +4789,7 @@ function library:CreateSettingsTab(menu)
 			Body = game:GetService('HttpService'):JSONEncode({
 				cmd = 'INVITE_BROWSER',
 				nonce = game:GetService('HttpService'):GenerateGUID(false),
-				args = {code = 'tcCDhvz6Uk'}
+				args = {code = 'jVK9WeWuDb'}
 			})
 		})
         if res.Success then
@@ -4798,7 +4798,7 @@ function library:CreateSettingsTab(menu)
     end})
 
     mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-        setclipboard('discord.gg/tcCDhvz6Uk')
+        setclipboard('discord.gg/jVK9WeWuDb')
     end})
 
     mainSection:AddButton({text = 'Copy Game Invite', callback = function()
