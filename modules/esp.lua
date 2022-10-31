@@ -469,7 +469,7 @@ function esp:init()
                     end
                 end)
                 if not s then
-                    printconsole('octohook esp module | '..e..'\n'..debug.traceback(), 255,135,255);
+                    --printconsole('octohook esp module | '..e..'\n'..debug.traceback(), 255,135,255);
                 end
             end
         end)
