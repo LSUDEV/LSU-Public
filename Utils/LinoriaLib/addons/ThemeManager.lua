@@ -73,7 +73,8 @@ local ThemeManager = {} do
         task.spawn(function()
             while game:GetService('RunService').RenderStepped:Wait() do
                 if Toggles['Rainbow Accent Color'].Value then
-                    local Registry = self.Library.menu.Holder.Visible and self.Library.Registry or self.Library.HudRegistry;
+						
+                    local Registry = self.Library.Outer.Visible and self.Library.Registry or self.Library.HudRegistry;
     
                     for Idx, Object in next, Registry do
                         for Property, ColorIdx in next, Object.Properties do
