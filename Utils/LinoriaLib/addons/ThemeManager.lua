@@ -69,33 +69,6 @@ local ThemeManager = {} do
 		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
 		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
 		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
-        groupbox:AddToggle('Rainbow Accent Color', {Text = 'Rainbow Accent Color'});
-        task.spawn(function()
-            while game:GetService('RunService').RenderStepped:Wait() do
-                if Toggles['Rainbow Accent Color'].Value then
-						
-                    local Registry = self.Library.Outer.Visible and self.Library.Registry or self.Library.HudRegistry;
-    
-                    for Idx, Object in next, Registry do
-                        for Property, ColorIdx in next, Object.Properties do
-                            if ColorIdx == 'AccentColor' or ColorIdx == 'AccentColorDark' then
-                                local Instance = Object.Instance;
-                                local yPos = Instance.AbsolutePosition.Y;
-        
-                                local Mapped = self.Library:MapValue(yPos, 0, 1080, 0, 0.5) * 1.5;
-                                local Color = Color3.fromHSV((self.Library.CurrentRainbowHue - Mapped) % 1, 0.8, 1);
-        
-                                if ColorIdx == 'AccentColorDark' then
-                                    Color = self.Library:GetDarkerColor(Color);
-                                end;
-        
-                                Instance[Property] = Color;
-                            end;
-                        end;
-                    end;
-                end;
-            end;
-        end);
 		groupbox:AddLabel('Outline color'):AddColorPicker('OutlineColor', { Default = self.Library.OutlineColor });
 		groupbox:AddLabel('Font color')	:AddColorPicker('FontColor', { Default = self.Library.FontColor });
 		local ThemesArray = {}
@@ -114,6 +87,9 @@ local ThemeManager = {} do
 			self:ApplyTheme(Options.ThemeManager_ThemeList.Value)
 		end)
 		groupbox:AddDivider()
+        groupbox:AddToggle('showbindmenu', {Text = 'Show Keybinds Menu'});
+        groupbox:AddToggle('showwatermark', {Text = 'Show Watermark'});
+        groupbox:AddDivider()
 		groupbox:AddDropdown('ThemeManager_CustomThemeList', { Text = 'Custom themes', Values = self:ReloadCustomThemes(), AllowNull = true, Default = 1 })
 		groupbox:AddInput('ThemeManager_CustomThemeName', { Text = 'Custom theme name' })
 
