@@ -1,4 +1,4 @@
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
 return{
-"764458675402718",
-"cracked",
+	HWID,
 }
