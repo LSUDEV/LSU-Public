@@ -1,0 +1,4 @@
+local id = game.Players.LocalPlayer.UserId
+_G.SilentVIP = {
+	id;
+}
