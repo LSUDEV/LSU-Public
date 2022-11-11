@@ -1,0 +1,5 @@
+userids = {
+[1] = false,
+[2] = true,
+}
+return userids
