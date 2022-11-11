@@ -1,0 +1,48 @@
+supportedgame = {
+[3823781113] = true, --saber sim
+[6284583030] = true, --pet simulator x
+[6872265039] = true, --bed war
+[3956818381] = true, --ninja legend
+[3857052864] = true, --https://www.roblox.com/games/3857052864/The-Rake-Fan-Remake
+[286090429] = true, --arsenal
+[7393403076] = true, --anime artifact
+[7541759836] = true, --https://www.roblox.com/games/7541759836/chinesegameidkwhat
+[7549229959] = true, --Squid Game
+[6679274937] = true, --vans world
+[2986677229] = true, --giant sim
+[1537690962] = true, --Bee Swarm Simulator
+[7508789810] = true, --😈 Devious Lick Simulator 😈
+[7560156054] = true, --clickersimulator
+[3089478851] = true, -- wizard simulator
+[1828509885] = true, -- Egg Farm Simulator
+[8592863835] = true, -- Magnet Simulator 2 ⚡
+[3101667897] = true, --Legend Of Speed
+[3623096087] = true, --Muscle Legends
+[2629642516] = true, --Bitcoin Miner
+[8554378337] = true, --Weapon Fighting Simulator
+[8884433153] = true, --Collect All Pets
+[8893378293] = true, -- GRAMMY Week
+[8750997647] = true, --tapping legend x
+[5977280685] = true, --Ninja Legend 2
+[8069117419] = true, --Demon Soul Simulator
+[9281034297] = true, --Goal Kick Simulator
+[2753915549] = true, --Blox Fruit
+[9551640993] = true, --Mining Simulator 2
+[9681073174] = true, --Gym Training Simulator
+[9555732501] = true, --Nen Fighting Simulator
+[6403373529] = true, --Slap Battles👏
+[9498006165] = true, --Tapping Simulator
+[8876694280] = true, --Strong Simulator X
+[7969108904] = true, --Clicking Simulator
+[10198661638] = true, --Farm Factory Tycoon
+[10676523834] = true,--Racing Rocket
+[9992339729] = true, --Longest Answer Wins
+[10425191433] = true, --Trick Shot Simulator
+[8612195438] = true, --Clicker Party Simulator
+[10447678365] = true, --Dinosaur Simulator
+[10758111998] = true, --2019 Booga Booga [REBORN]
+[10767870749] = true --2019 Booga Booga [REBORN] Void
+
+
+}
+return supportedgame 
