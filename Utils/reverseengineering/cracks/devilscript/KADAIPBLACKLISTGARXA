@@ -1,0 +1,4 @@
+whitelisted = {
+["1.1"] = true,
+}
+return whitelisted 
