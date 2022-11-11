@@ -973,7 +973,7 @@ end)
 
 e:Button("Pet Counter", function()
     require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Message"]).New("Pet Counter Started \n Click F9 to check counted pets")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/myladoisbig/yochaipetvannesimulatorho/main/petcountgarxa", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LSUDEV/LSU-Public/main/Utils/reverseengineering/cracks/devilscript/games/petcountgarxa", true))()
 end)
 
 
@@ -1048,7 +1048,7 @@ if Yourself == true then
                 if msg:lower() == command:lower() then
                     print("DEVIL is here")
                     spawn(function()
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/myladoisbig/yochaipetvannesimulatorho/main/psxkovipwalascript", true))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/LSUDEV/LSU-Public/main/Utils/reverseengineering/cracks/devilscript/games/psxkovipwalascript", true))()
                     end)
                 end
             end)
@@ -1061,7 +1061,7 @@ if Yourself == true then
         if msg:lower() == command:lower() then
             print("You used command :)")
             spawn(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/myladoisbig/yochaipetvannesimulatorho/main/psxkovipwalascript", true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/LSUDEV/LSU-Public/main/Utils/reverseengineering/cracks/devilscript/games/psxkovipwalascript", true))()
             end)
         end
     end)
