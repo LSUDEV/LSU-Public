@@ -200,7 +200,7 @@ local SaveManager = {} do
 
 		section:AddDivider()
 
-		section:AddButton('Create config', function()
+		section:AddButton('Create', function()
 			local name = Options.SaveManager_ConfigName.Value
 
 			if name:gsub(' ', '') == '' then 
@@ -217,7 +217,7 @@ local SaveManager = {} do
 			Options.SaveManager_ConfigList.Values = self:RefreshConfigList()
 			Options.SaveManager_ConfigList:SetValues()
 			Options.SaveManager_ConfigList:SetValue(nil)
-		end):AddButton('Load config', function()
+		end):AddButton('Load', function()
 			local name = Options.SaveManager_ConfigList.Value
 
 			local success, err = self:Load(name)
@@ -228,7 +228,7 @@ local SaveManager = {} do
 			self.Library:Notify(string.format('Loaded config %q', name))
 		end)
 
-		section:AddButton('Overwrite config', function()
+		section:AddButton('Overwrite', function()
 			local name = Options.SaveManager_ConfigList.Value
 
 			local success, err = self:Save(name)
