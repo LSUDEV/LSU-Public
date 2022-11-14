@@ -1,4 +1,5 @@
 
+
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
@@ -1188,7 +1189,7 @@ _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 													break
 												end
 												while 712 == (L_37_) / (858) do
-													if (L_128_[L_138_[L_12_]] ~= L_128_[L_138_[L_26_]]) then
+													if (L_128_[L_138_[L_12_]] == L_128_[L_138_[L_26_]]) then
 														L_125_ = L_125_ + L_7_;
 													else
 														L_125_ = L_138_[L_18_];
