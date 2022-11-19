@@ -574,7 +574,7 @@
 		end
 		writefile("lorix/debuglog.lrx", "")
 	end
-	menu.game = currentGame.Name
+	menu.game = _G.currentGame
 	if not isfolder("lorix/" .. menu.game) then
 		makefolder("lorix/" .. menu.game)
 	end
